@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Bass Culture | {{ content.short_title }}</title>
+{% endblock %}
+
+{% block body %}
+
+    <h3>Item detail</h3>
+
+    <h4>Author</h4>
+    {% for author in content.authors %}
+        {{ author.full_name }}
+    {% endfor %}
+
+    <h4>Seller</h4>
+
+        <p>{{ content.seller.name }}</p>
+
+    <h4>Item notes</h4>
+
+        <p>{{ content.item_notes }}</p>
+
+    <h4>Publisher</h4>
+
+        <p>{{ content.publisher.name }}</p>
+
+    <h4>Printer</h4>
+
+        <p>{{ content.printer.name }}</p>
+
+    <h4>Date</h4>
+
+        <p>{{ content.date }}</p>
+
+    <h4>RISM</h4>
+
+        <p>{{ content.rism }}</p>
+
+    <h4>Pagination</h4>
+
+        <p>{{ content.pagination }}</p>
+
+    <h4>Orientation</h4>
+
+        <p>{{ content.orientation }}</p>
+
+    <h4>Dimensions</h4>
+
+        <p>{{ content.dimensions }}</p>
+
+    <h4>Shelfmark</h4>
+
+        <p>{{ content.shelfmark }}</p>
+
+    <h4>Library</h4>
+
+        <p>{{ content.library }}</p>
+
+    <h4>Edition</h4>
+
+        <p>{{ content.edition }}</p>
+
+    <h4>Gore</h4>
+
+        <p>{{ content.gore }}</p>
+
+    <h4>Additional items</h4>
+
+        <p>{{ content.additional_items }}</p>
+
+{% endblock %}

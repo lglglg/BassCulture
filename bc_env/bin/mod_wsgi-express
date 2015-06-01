@@ -1,0 +1,10 @@
+#!/Users/BassCulture/Documents/Code/Git/BassCulture/bc_env/bin/python3.4
+# EASY-INSTALL-ENTRY-SCRIPT: 'mod-wsgi==4.4.11','console_scripts','mod_wsgi-express'
+__requires__ = 'mod-wsgi==4.4.11'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('mod-wsgi==4.4.11', 'console_scripts', 'mod_wsgi-express')()
+    )

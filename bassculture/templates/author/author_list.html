@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Bass Culture | Authors</title>
+{% endblock %}
+
+{% block body %}
+    <h1>Authors List</h1>
+
+    <table class='table'>
+
+    {% for author in content %}
+
+    <tr>
+        <td><a href="{{ author.url }}">{{ author.full_name }}</a>
+
+        </td>
+    {% endfor %}
+
+    </tr> 
+
+    </table>
+
+{% endblock %}

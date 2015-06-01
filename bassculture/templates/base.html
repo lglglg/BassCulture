@@ -1,0 +1,43 @@
+{# Load the tag library #}
+{% load bootstrap3 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+{% load compile_static %}
+
+<link rel="stylesheet" href="{{ STATIC_URL}}{% compile "lessfiles/bassculture.less" %}" />
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+  {% block title %}
+    <title>Bass Culture</title>
+  {% endblock %}
+
+{% block bootstrap3_content %}
+    <div class="container">
+
+        <p>
+            <a href="{% url 'item-list' %}">items</a>
+            <a href="{% url 'source-list' %}">sources</a>
+            <a href="{% url 'author-list' %}">authors</a>
+
+        </p>
+
+    </div>
+{% endblock %}
+        
+    </head>
+    <body>
+    {% block body %}
+
+    {% endblock %}
+    </body>
+</html>

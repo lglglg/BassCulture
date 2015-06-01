@@ -1,0 +1,1 @@
+from bassculture.admin import admin

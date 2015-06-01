@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Bass Culture | List of sources</title>
+{% endblock %}
+
+{% block body %}
+
+    <h1>Source List</h1>
+
+     <table class="table">
+
+    {% for source in content %}
+
+    <tr>
+        <td><a href="{{ source.url }}">{{ source.title }}</a></td>
+    </tr>
+
+    {% endfor %}
+    </table>
+{% endblock %}
