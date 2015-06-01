@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(__file__)
 
 
@@ -26,8 +26,6 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
-
-STATIC_ROOT = '/Users/BassCulture/Documents/Code/Git/BassCulture/bassculture/djangostatic'
 
 # Application definition
 
@@ -82,7 +80,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     # other finders..
-    'static_precompiler.finders.StaticPrecompilerFinder',
+#    'static_precompiler.finders.StaticPrecompilerFinder',
 )
 
 #SESSION_COOKIE_SECURE = True
@@ -122,8 +120,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-STATIC_URL = os.path.join(BASE_DIR,'/static/')
-STATICFILES_DIRS = ( os.path.join(PROJECT_DIR,'static/'),)
+STATIC_ROOT = '/Users/BassCulture/Documents/Code/Git/BassCulture/bassculture/djangostatic'
+#STATIC_ROOT = os.path.join(BASE_DIR,'/djangostatic')
+#STATIC_URL = os.path.join(BASE_DIR,'/static/')
+STATIC_URL = '/Users/BassCulture/Documents/Code/Git/BassCulture/bassculture/static/'
+#STATICFILES_DIRS = ( os.path.join(PROJECT_DIR,'static/'),)
 #STATIC_PRECOMPILER_ROOT = '/static/'
 
 SOLR_SERVER = 'http://localhost:8080'
