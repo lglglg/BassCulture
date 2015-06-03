@@ -3,12 +3,10 @@
 
 {# Load CSS and JavaScript #}
 {% bootstrap_css %}
-{% bootstrap_javascript %}
+{% bootstrap_javascript jquery=1 %}
 
 {# Display django.contrib.messages as Bootstrap alerts #}
 {% bootstrap_messages %}
-
-{% load staticfiles %}
 
 <!DOCTYPE html>
 
@@ -18,6 +16,9 @@
   {% block title %}
     <title>Bass Culture</title>
   {% endblock %}
+
+</head>
+
 
 {% block bootstrap3_content %}
     <div class="container">

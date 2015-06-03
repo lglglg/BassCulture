@@ -7466,3 +7466,16 @@ INFO  - 2015-05-22 16:59:32.528; org.apache.solr.servlet.SolrDispatchFilter; [ad
 INFO  - 2015-05-22 16:59:32.625; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/system params={wt=json&_=1432310372577} status=0 QTime=30 
 INFO  - 2015-05-28 15:31:19.636; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1432823479611} status=0 QTime=7 
 INFO  - 2015-05-28 15:31:19.737; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/system params={wt=json&_=1432823479692} status=0 QTime=22 
+INFO  - 2015-06-03 11:19:30.178; org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=850429804
+INFO  - 2015-06-03 11:19:30.187; org.apache.solr.core.SolrCore; [collection1]  CLOSING SolrCore org.apache.solr.core.SolrCore@47db2674
+INFO  - 2015-06-03 11:19:30.195; org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=5667,transaction_logs_total_number=10}
+INFO  - 2015-06-03 11:19:30.195; org.apache.solr.update.SolrCoreState; Closing SolrCoreState
+INFO  - 2015-06-03 11:19:30.195; org.apache.solr.update.DefaultSolrCoreState; SolrCoreState ref count has reached 0 - closing IndexWriter
+INFO  - 2015-06-03 11:19:30.195; org.apache.solr.update.DefaultSolrCoreState; closing IndexWriter with IndexWriterCloser
+INFO  - 2015-06-03 11:19:30.210; org.apache.solr.core.SolrCore; [collection1] Closing main searcher on request.
+INFO  - 2015-06-03 11:19:30.216; org.apache.solr.core.CachingDirectoryFactory; Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+INFO  - 2015-06-03 11:19:30.217; org.apache.solr.core.CachingDirectoryFactory; looking to close /private/var/db/solr/timekeeper-solr/index [CachedDir<<refCount=0;path=/private/var/db/solr/timekeeper-solr/index;done=false>>]
+INFO  - 2015-06-03 11:19:30.218; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /private/var/db/solr/timekeeper-solr/index
+INFO  - 2015-06-03 11:19:30.218; org.apache.solr.core.CachingDirectoryFactory; looking to close /private/var/db/solr/timekeeper-solr [CachedDir<<refCount=0;path=/private/var/db/solr/timekeeper-solr;done=false>>]
+INFO  - 2015-06-03 11:19:30.219; org.apache.solr.core.CachingDirectoryFactory; Closing directory: /private/var/db/solr/timekeeper-solr
+INFO  - 2015-06-03 11:19:30.264; org.eclipse.jetty.servlet.listener.ELContextCleaner; javax.el.BeanELResolver purged

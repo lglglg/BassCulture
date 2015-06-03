@@ -42,6 +42,7 @@ INSTALLED_APPS = (
 #    'static_precompiler',
 #    'mod_wsgi.server',
     'bootstrap3',
+    'clear_cache',
 )
 
 
@@ -116,15 +117,18 @@ USE_L10N = True
 
 USE_TZ = True
 
+BOOTSTRAP3 = {
+    
+    'include_jquery': True,
+    'jquery_url': 'http://code.jquery.com/jquery-1.11.3.min.js'
+
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-STATIC_ROOT = '/Users/BassCulture/Documents/Code/Git/BassCulture/bassculture/djangostatic'
-#STATIC_ROOT = os.path.join(BASE_DIR,'/djangostatic')
-#STATIC_URL = os.path.join(BASE_DIR,'/static/')
-STATIC_URL = '/Users/BassCulture/Documents/Code/Git/BassCulture/bassculture/static/'
-#STATICFILES_DIRS = ( os.path.join(PROJECT_DIR,'static/'),)
-#STATIC_PRECOMPILER_ROOT = '/static/'
+STATIC_ROOT = (os.path.join(PROJECT_DIR, 'static'))
+STATIC_URL = '/static/'
+# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 SOLR_SERVER = 'http://localhost:8080'
