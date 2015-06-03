@@ -1,2 +1,4 @@
 bassculture/migrations/*
 *.pyc
+bc_env/
+solr/
