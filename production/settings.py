@@ -110,7 +110,7 @@ PROJECT_DIR = os.path.dirname(__file__)
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 SOLR_SERVER = 'http://localhost:8080'
