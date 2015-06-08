@@ -34,9 +34,9 @@
                     $('#diva-wrapper').diva({
                         enableAutoHeight: true,
                         fixedHeightGrid: false,
-                        iipServerURL: "http://localhost/fcgi-bin/iipsrv.fcgi",
-                        objectData: "{% static 'json/pyramid.json' %}",
-                        imageDir: "/tmp/img/{{ content.item_id }}",
+                        iipServerURL: "http://bassculture.info/iipsrv",
+                        objectData: "{% static 'json/01.json' %}",
+                        imageDir: "/mnt/diskpack/www/html/bassculture.info/www/wsgi/static/images/{{ content.item_id }}",
                         enableCanvas: true,
                         enableDownload: true
                     });
@@ -59,6 +59,7 @@
     <h4>Seller</h4>
 
         <p>{{ content.seller.name }}</p>
+        <p>{{ content.item_id }}</p>
 
     <h4>Item notes</h4>
 
